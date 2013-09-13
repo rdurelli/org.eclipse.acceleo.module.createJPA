@@ -1,0 +1,2388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="createEntityJPA" nsURI="org::eclipse::acceleo::module::createJPA::main::createEntityJPA" startHeaderPosition="29" endHeaderPosition="827">
+    <input>
+      <takesTypesFrom href="http://www.eclipse.org/uml2/3.0.0/UML#/"/>
+    </input>
+    <ownedModuleElement xsi:type="mtl:Template" name="createEntityJPA" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;package br.com.uspicmc.modernization.JPA.entity;&#xA;&#xA;import java.io.Serializable;&#xA;import javax.persistence.Basic;&#xA;import javax.persistence.Column;&#xA;import javax.persistence.Entity;&#xA;import javax.persistence.GeneratedValue;&#xA;import javax.persistence.GenerationType;&#xA;import javax.persistence.Id;&#xA;import javax.persistence.NamedQueries;&#xA;import javax.persistence.NamedQuery;&#xA;import javax.persistence.Table;&#xA;import javax.xml.bind.annotation.XmlRootElement;&#xA;&#xA;/**&#xA; * &#xA; * @author Rafael Durelli&#xA; * @version v1&#xA; */&#xA;@Entity&#xA;@Table(name = &quot;"/>
+        <body xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toUpper"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;)&#xA;@XmlRootElement&#xA;@NamedQueries({&#xA;    @NamedQuery(name = &quot;"/>
+        <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+          </source>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".findAll&quot;, query = &quot;SELECT a FROM "/>
+        <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+          </source>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" a&quot;),&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="    @NamedQuery(name = &quot;"/>
+          <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+              </source>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+            </source>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".findBy"/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.7/p">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;, query = &quot;SELECT a FROM "/>
+          <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+              </source>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+            </source>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" a WHERE a."/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.7/p">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" = :"/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.7/p">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;)&#xA;"/>
+          <loopVariable name="p">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/11/Set(Property)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//Classifier/attribute"/>
+          </iterSet>
+          <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",&#xA;">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </each>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="})&#xA;public class "/>
+        <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+          </source>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" implements Serializable {&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;private static final long serialVersionUID = 1L;&#xA;&#x9;&#x9;&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;@Column(name = &quot;"/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.11/p">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot;)&#xA;&#x9;&#x9;private "/>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" String "/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.11/p">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";"/>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/equalsIgnoreCase">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Type"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.11/p">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//TypedElement/type"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+              </source>
+              <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="VARCHAR">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              </argument>
+            </ifExpr>
+            <elseIf>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" Integer "/>
+              <body xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.11/p">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+              </body>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="; "/>
+              <ifExpr xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/equalsIgnoreCase">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Type"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.11/p">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//TypedElement/type"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+                </source>
+                <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="INT">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                </argument>
+              </ifExpr>
+            </elseIf>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <loopVariable name="p">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/11/Set(Property)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//Classifier/attribute"/>
+          </iterSet>
+          <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </each>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;&#x9;/** &#xA;    &#x9;* Class constructor.&#xA;    &#x9;*/&#xA;&#x9;&#x9;public "/>
+        <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+          </source>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="(){&#xA;&#xA;&#x9;&#x9;}&#xA;&#xA;&#x9;&#x9;/** &#xA;    &#x9;* Class constructor.&#xA;    &#x9;*/&#xA;&#x9;&#x9;public "/>
+        <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+          </source>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="("/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" String "/>
+            <body xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.17/p">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+              </source>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+            </body>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/equalsIgnoreCase">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Type"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.17/p">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//TypedElement/type"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+              </source>
+              <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="VARCHAR">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              </argument>
+            </ifExpr>
+            <elseIf>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" Integer "/>
+              <body xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.17/p">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+                </source>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+              </body>
+              <ifExpr xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/equalsIgnoreCase">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Type"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.17/p">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//TypedElement/type"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+                </source>
+                <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="INT">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                </argument>
+              </ifExpr>
+            </elseIf>
+          </body>
+          <loopVariable name="p">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/11/Set(Property)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//Classifier/attribute"/>
+          </iterSet>
+          <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </each>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="){&#xA;&#x9;&#x9;&#x9;super();&#xA;&#x9;&#x9;&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#x9;this."/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.19/p">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" = "/>
+          <body xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.19/p">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xA;"/>
+          <loopVariable name="p">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/11/Set(Property)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//Classifier/attribute"/>
+          </iterSet>
+          <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </each>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#xA;&#x9;&#x9;}&#x9;&#x9;&#xA;&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;/**&#xA;&#x9;&#x9; * &#xA;&#x9;&#x9; * @return return the "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.21/p">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &#xA;&#x9;&#x9; */&#xA;&#x9;&#x9;public "/>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" String get"/>
+            <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.21/p">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+              </source>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="()"/>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/equalsIgnoreCase">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Type"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.21/p">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//TypedElement/type"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+              </source>
+              <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="VARCHAR">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              </argument>
+            </ifExpr>
+            <elseIf>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" Integer get"/>
+              <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.21/p">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+                </source>
+              </body>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" ()"/>
+              <ifExpr xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/equalsIgnoreCase">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Type"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.21/p">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//TypedElement/type"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+                </source>
+                <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="INT">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                </argument>
+              </ifExpr>
+            </elseIf>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" {&#xA;&#x9;&#x9;&#x9;return this."/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.21/p">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xA;&#x9;&#x9;}&#xA;"/>
+          <loopVariable name="p">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/11/Set(Property)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//Classifier/attribute"/>
+          </iterSet>
+          <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </each>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#xA;&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;/**&#xA;&#x9;&#x9; * &#xA;&#x9;&#x9; * @param set the "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.23/p">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;&#x9; */&#xA;&#x9;&#x9;public void set"/>
+          <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.23/p">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+            </source>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="("/>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" String "/>
+            <body xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.23/p">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+            </body>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/equalsIgnoreCase">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Type"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.23/p">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//TypedElement/type"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+              </source>
+              <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="VARCHAR">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              </argument>
+            </ifExpr>
+            <elseIf>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" Integer "/>
+              <body xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.23/p">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+              </body>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" "/>
+              <ifExpr xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/equalsIgnoreCase">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Type"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.23/p">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//TypedElement/type"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+                </source>
+                <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="INT">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                </argument>
+              </ifExpr>
+            </elseIf>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=") {&#xA;&#x9;&#x9;&#x9;this."/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.23/p">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" = "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.23/p">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xA;&#x9;&#x9;}&#xA;"/>
+          <loopVariable name="p">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/11/Set(Property)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//Classifier/attribute"/>
+          </iterSet>
+          <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </each>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#xA;&#x9;@Override&#xA;    public boolean equals(Object o) {&#xA;        &#xA;&#x9;&#x9;if ("/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="( this.get"/>
+            <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.25/p">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+              </source>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="().equals((("/>
+            <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+                </source>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+              </source>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=")o).get"/>
+            <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.25/p">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+              </source>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="()) == true )"/>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/equalsIgnoreCase">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Type"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.25/p">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//TypedElement/type"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+              </source>
+              <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="VARCHAR">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              </argument>
+            </ifExpr>
+            <elseIf>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" ( this.get"/>
+              <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.25/p">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+                </source>
+              </body>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="() == (("/>
+              <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:OperationCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp">
+                    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+                  </source>
+                  <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+                </source>
+              </body>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=")o).get"/>
+              <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.25/p">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+                </source>
+              </body>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="() ) == true"/>
+              <ifExpr xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/equalsIgnoreCase">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:PropertyCallExp">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Type"/>
+                    <source xsi:type="ocl.ecore:VariableExp" name="p" referredVariable="/0/createEntityJPA/@body.1/@body.25/p">
+                      <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+                    </source>
+                    <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//TypedElement/type"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+                </source>
+                <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="INT">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                </argument>
+              </ifExpr>
+            </elseIf>
+          </body>
+          <loopVariable name="p">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/11/Set(Property)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//Classifier/attribute"/>
+          </iterSet>
+          <each xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &amp;&amp; &#xA;&#x9;&#x9;">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </each>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=") {&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;return true;&#xA;&#xA;&#x9;&#x9;}&#xA;&#x9;&#x9;else {&#xA;&#xA;&#x9;&#x9;&#x9;return false;&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;}&#xA;        &#xA;        &#xA;    }&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/+">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/br/com/uspicmc/modernization/JPA/entity/">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </source>
+          <argument xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/createEntityJPA/aClass">
+                    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+                </source>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+              </source>
+            </source>
+            <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".java">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+          </argument>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <parameter name="aClass">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+      <eOperations name="toUpperFirst">
+        <eAnnotations source="MTL"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eOperations>
+      <eOperations name="equalsIgnoreCase">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+        <eParameters name="other">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="+">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="other">
+          <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="createEntityJPA">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/createEntityJPA"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aClass">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Class_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="collections">
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(Property)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/createEntityJPA">
+      <details key="start" value="97"/>
+      <details key="end" value="3440"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/createEntityJPA/@body.0">
+      <details key="start" value="147"/>
+      <details key="end" value="148"/>
+      <details key="line" value="6"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/createEntityJPA/@body.1">
+      <details key="start" value="148"/>
+      <details key="end" value="3428"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/createEntityJPA/@body.1/@body.0">
+      <details key="start" value="272"/>
+      <details key="end" value="795"/>
+      <details key="line" value="8"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/createEntityJPA/@body.1/@body.1">
+      <details key="start" value="796"/>
+      <details key="end" value="827"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/createEntityJPA/@body.1/@body.1/@source">
+      <details key="start" value="796"/>
+      <details key="end" value="817"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/createEntityJPA/@body.1/@body.1/@source/@source">
+      <details key="start" value="796"/>
+      <details key="end" value="807"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/createEntityJPA/@body.1/@body.1/@source/@source/aClass">
+      <details key="start" value="796"/>
+      <details key="end" value="802"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/createEntityJPA/@body.1/@body.2">
+      <details key="start" value="829"/>
+      <details key="end" value="888"/>
+      <details key="line" value="29"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/createEntityJPA/@body.1/@body.3">
+      <details key="start" value="889"/>
+      <details key="end" value="925"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/createEntityJPA/@body.1/@body.3/@source">
+      <details key="start" value="889"/>
+      <details key="end" value="910"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/createEntityJPA/@body.1/@body.3/@source/@source">
+      <details key="start" value="889"/>
+      <details key="end" value="900"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/createEntityJPA/@body.1/@body.3/@source/@source/aClass">
+      <details key="start" value="889"/>
+      <details key="end" value="895"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/createEntityJPA/@body.1/@body.4">
+      <details key="start" value="927"/>
+      <details key="end" value="961"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/createEntityJPA/@body.1/@body.5">
+      <details key="start" value="962"/>
+      <details key="end" value="998"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/createEntityJPA/@body.1/@body.5/@source">
+      <details key="start" value="962"/>
+      <details key="end" value="983"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/createEntityJPA/@body.1/@body.5/@source/@source">
+      <details key="start" value="962"/>
+      <details key="end" value="973"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/createEntityJPA/@body.1/@body.5/@source/@source/aClass">
+      <details key="start" value="962"/>
+      <details key="end" value="968"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/createEntityJPA/@body.1/@body.6">
+      <details key="start" value="1000"/>
+      <details key="end" value="1006"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/createEntityJPA/@body.1/@body.7">
+      <details key="start" value="1010"/>
+      <details key="end" value="1258"/>
+      <details key="line" value="33"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/createEntityJPA/@body.1/@body.7/@body.0">
+      <details key="start" value="1068"/>
+      <details key="end" value="1092"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/createEntityJPA/@body.1/@body.7/@body.1">
+      <details key="start" value="1093"/>
+      <details key="end" value="1129"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/createEntityJPA/@body.1/@body.7/@body.1/@source">
+      <details key="start" value="1093"/>
+      <details key="end" value="1114"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/createEntityJPA/@body.1/@body.7/@body.1/@source/@source">
+      <details key="start" value="1093"/>
+      <details key="end" value="1104"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/createEntityJPA/@body.1/@body.7/@body.1/@source/@source/aClass">
+      <details key="start" value="1093"/>
+      <details key="end" value="1099"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/createEntityJPA/@body.1/@body.7/@body.2">
+      <details key="start" value="1131"/>
+      <details key="end" value="1138"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/createEntityJPA/@body.1/@body.7/@body.3">
+      <details key="start" value="1139"/>
+      <details key="end" value="1145"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/createEntityJPA/@body.1/@body.7/@body.3/p">
+      <details key="start" value="1139"/>
+      <details key="end" value="1140"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/createEntityJPA/@body.1/@body.7/@body.4">
+      <details key="start" value="1147"/>
+      <details key="end" value="1173"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/createEntityJPA/@body.1/@body.7/@body.5">
+      <details key="start" value="1174"/>
+      <details key="end" value="1210"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/createEntityJPA/@body.1/@body.7/@body.5/@source">
+      <details key="start" value="1174"/>
+      <details key="end" value="1195"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/createEntityJPA/@body.1/@body.7/@body.5/@source/@source">
+      <details key="start" value="1174"/>
+      <details key="end" value="1185"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/createEntityJPA/@body.1/@body.7/@body.5/@source/@source/aClass">
+      <details key="start" value="1174"/>
+      <details key="end" value="1180"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.33" references="/0/createEntityJPA/@body.1/@body.7/@body.6">
+      <details key="start" value="1212"/>
+      <details key="end" value="1223"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.34" references="/0/createEntityJPA/@body.1/@body.7/@body.7">
+      <details key="start" value="1224"/>
+      <details key="end" value="1230"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/createEntityJPA/@body.1/@body.7/@body.7/p">
+      <details key="start" value="1224"/>
+      <details key="end" value="1225"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/createEntityJPA/@body.1/@body.7/@body.8">
+      <details key="start" value="1232"/>
+      <details key="end" value="1236"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/createEntityJPA/@body.1/@body.7/@body.9">
+      <details key="start" value="1237"/>
+      <details key="end" value="1243"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/createEntityJPA/@body.1/@body.7/@body.9/p">
+      <details key="start" value="1237"/>
+      <details key="end" value="1238"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/createEntityJPA/@body.1/@body.7/@body.10">
+      <details key="start" value="1245"/>
+      <details key="end" value="1248"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/createEntityJPA/@body.1/@body.7/p">
+      <details key="start" value="1016"/>
+      <details key="end" value="1028"/>
+      <details key="line" value="33"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/createEntityJPA/@body.1/@body.7/@iterSet">
+      <details key="start" value="1031"/>
+      <details key="end" value="1047"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/createEntityJPA/@body.1/@body.7/@iterSet/aClass">
+      <details key="start" value="1031"/>
+      <details key="end" value="1037"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/createEntityJPA/@body.1/@body.7/@each">
+      <details key="start" value="1060"/>
+      <details key="end" value="1065"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/createEntityJPA/@body.1/@body.8">
+      <details key="start" value="1258"/>
+      <details key="end" value="1274"/>
+      <details key="line" value="35"/>
+    </eAnnotations>
+    <eAnnotations source="positions.45" references="/0/createEntityJPA/@body.1/@body.9">
+      <details key="start" value="1275"/>
+      <details key="end" value="1311"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.46" references="/0/createEntityJPA/@body.1/@body.9/@source">
+      <details key="start" value="1275"/>
+      <details key="end" value="1296"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/createEntityJPA/@body.1/@body.9/@source/@source">
+      <details key="start" value="1275"/>
+      <details key="end" value="1286"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/createEntityJPA/@body.1/@body.9/@source/@source/aClass">
+      <details key="start" value="1275"/>
+      <details key="end" value="1281"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.49" references="/0/createEntityJPA/@body.1/@body.10">
+      <details key="start" value="1313"/>
+      <details key="end" value="1397"/>
+      <details key="line" value="36"/>
+    </eAnnotations>
+    <eAnnotations source="positions.50" references="/0/createEntityJPA/@body.1/@body.11">
+      <details key="start" value="1398"/>
+      <details key="end" value="1638"/>
+      <details key="line" value="40"/>
+    </eAnnotations>
+    <eAnnotations source="positions.51" references="/0/createEntityJPA/@body.1/@body.11/@body.0">
+      <details key="start" value="1455"/>
+      <details key="end" value="1473"/>
+      <details key="line" value="41"/>
+    </eAnnotations>
+    <eAnnotations source="positions.52" references="/0/createEntityJPA/@body.1/@body.11/@body.1">
+      <details key="start" value="1474"/>
+      <details key="end" value="1480"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.53" references="/0/createEntityJPA/@body.1/@body.11/@body.1/p">
+      <details key="start" value="1474"/>
+      <details key="end" value="1475"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.54" references="/0/createEntityJPA/@body.1/@body.11/@body.2">
+      <details key="start" value="1482"/>
+      <details key="end" value="1495"/>
+      <details key="line" value="41"/>
+    </eAnnotations>
+    <eAnnotations source="positions.55" references="/0/createEntityJPA/@body.1/@body.11/@body.3">
+      <details key="start" value="1495"/>
+      <details key="end" value="1630"/>
+      <details key="line" value="42"/>
+    </eAnnotations>
+    <eAnnotations source="positions.56" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@body.0">
+      <details key="start" value="1541"/>
+      <details key="end" value="1549"/>
+      <details key="line" value="42"/>
+    </eAnnotations>
+    <eAnnotations source="positions.57" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@body.1">
+      <details key="start" value="1550"/>
+      <details key="end" value="1556"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.58" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@body.1/p">
+      <details key="start" value="1550"/>
+      <details key="end" value="1551"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.59" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@body.2">
+      <details key="start" value="1558"/>
+      <details key="end" value="1559"/>
+      <details key="line" value="42"/>
+    </eAnnotations>
+    <eAnnotations source="positions.60" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@ifExpr">
+      <details key="start" value="1499"/>
+      <details key="end" value="1540"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.61" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@ifExpr/@source">
+      <details key="start" value="1500"/>
+      <details key="end" value="1511"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@ifExpr/@source/@source">
+      <details key="start" value="1500"/>
+      <details key="end" value="1506"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@ifExpr/@source/@source/p">
+      <details key="start" value="1500"/>
+      <details key="end" value="1501"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@ifExpr/@argument.0">
+      <details key="start" value="1529"/>
+      <details key="end" value="1538"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@elseIf.0">
+      <details key="start" value="1559"/>
+      <details key="end" value="1625"/>
+      <details key="line" value="42"/>
+    </eAnnotations>
+    <eAnnotations source="positions.66" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@elseIf.0/@body.0">
+      <details key="start" value="1605"/>
+      <details key="end" value="1614"/>
+      <details key="line" value="42"/>
+    </eAnnotations>
+    <eAnnotations source="positions.67" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@elseIf.0/@body.1">
+      <details key="start" value="1615"/>
+      <details key="end" value="1621"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@elseIf.0/@body.1/p">
+      <details key="start" value="1615"/>
+      <details key="end" value="1616"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@elseIf.0/@body.2">
+      <details key="start" value="1623"/>
+      <details key="end" value="1625"/>
+      <details key="line" value="42"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@elseIf.0/@ifExpr">
+      <details key="start" value="1567"/>
+      <details key="end" value="1604"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@elseIf.0/@ifExpr/@source">
+      <details key="start" value="1568"/>
+      <details key="end" value="1579"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.72" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@elseIf.0/@ifExpr/@source/@source">
+      <details key="start" value="1568"/>
+      <details key="end" value="1574"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.73" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@elseIf.0/@ifExpr/@source/@source/p">
+      <details key="start" value="1568"/>
+      <details key="end" value="1569"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.74" references="/0/createEntityJPA/@body.1/@body.11/@body.3/@elseIf.0/@ifExpr/@argument.0">
+      <details key="start" value="1597"/>
+      <details key="end" value="1602"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.75" references="/0/createEntityJPA/@body.1/@body.11/@body.4">
+      <details key="start" value="1630"/>
+      <details key="end" value="1631"/>
+      <details key="line" value="43"/>
+    </eAnnotations>
+    <eAnnotations source="positions.76" references="/0/createEntityJPA/@body.1/@body.11/p">
+      <details key="start" value="1404"/>
+      <details key="end" value="1416"/>
+      <details key="line" value="40"/>
+    </eAnnotations>
+    <eAnnotations source="positions.77" references="/0/createEntityJPA/@body.1/@body.11/@iterSet">
+      <details key="start" value="1419"/>
+      <details key="end" value="1435"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.78" references="/0/createEntityJPA/@body.1/@body.11/@iterSet/aClass">
+      <details key="start" value="1419"/>
+      <details key="end" value="1425"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.79" references="/0/createEntityJPA/@body.1/@body.11/@each">
+      <details key="start" value="1448"/>
+      <details key="end" value="1452"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.80" references="/0/createEntityJPA/@body.1/@body.12">
+      <details key="start" value="1639"/>
+      <details key="end" value="1690"/>
+      <details key="line" value="44"/>
+    </eAnnotations>
+    <eAnnotations source="positions.81" references="/0/createEntityJPA/@body.1/@body.13">
+      <details key="start" value="1691"/>
+      <details key="end" value="1727"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.82" references="/0/createEntityJPA/@body.1/@body.13/@source">
+      <details key="start" value="1691"/>
+      <details key="end" value="1712"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.83" references="/0/createEntityJPA/@body.1/@body.13/@source/@source">
+      <details key="start" value="1691"/>
+      <details key="end" value="1702"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.84" references="/0/createEntityJPA/@body.1/@body.13/@source/@source/aClass">
+      <details key="start" value="1691"/>
+      <details key="end" value="1697"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.85" references="/0/createEntityJPA/@body.1/@body.14">
+      <details key="start" value="1729"/>
+      <details key="end" value="1789"/>
+      <details key="line" value="48"/>
+    </eAnnotations>
+    <eAnnotations source="positions.86" references="/0/createEntityJPA/@body.1/@body.15">
+      <details key="start" value="1790"/>
+      <details key="end" value="1826"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.87" references="/0/createEntityJPA/@body.1/@body.15/@source">
+      <details key="start" value="1790"/>
+      <details key="end" value="1811"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.88" references="/0/createEntityJPA/@body.1/@body.15/@source/@source">
+      <details key="start" value="1790"/>
+      <details key="end" value="1801"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.89" references="/0/createEntityJPA/@body.1/@body.15/@source/@source/aClass">
+      <details key="start" value="1790"/>
+      <details key="end" value="1796"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.90" references="/0/createEntityJPA/@body.1/@body.16">
+      <details key="start" value="1828"/>
+      <details key="end" value="1829"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.91" references="/0/createEntityJPA/@body.1/@body.17">
+      <details key="start" value="1829"/>
+      <details key="end" value="2041"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.92" references="/0/createEntityJPA/@body.1/@body.17/@body.0">
+      <details key="start" value="1883"/>
+      <details key="end" value="2035"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.93" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@body.0">
+      <details key="start" value="1929"/>
+      <details key="end" value="1937"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.94" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@body.1">
+      <details key="start" value="1938"/>
+      <details key="end" value="1954"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.95" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@body.1/@source">
+      <details key="start" value="1938"/>
+      <details key="end" value="1944"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.96" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@body.1/@source/p">
+      <details key="start" value="1938"/>
+      <details key="end" value="1939"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.97" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@ifExpr">
+      <details key="start" value="1887"/>
+      <details key="end" value="1928"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.98" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@ifExpr/@source">
+      <details key="start" value="1888"/>
+      <details key="end" value="1899"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.99" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@ifExpr/@source/@source">
+      <details key="start" value="1888"/>
+      <details key="end" value="1894"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.100" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@ifExpr/@source/@source/p">
+      <details key="start" value="1888"/>
+      <details key="end" value="1889"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.101" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@ifExpr/@argument.0">
+      <details key="start" value="1917"/>
+      <details key="end" value="1926"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.102" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@elseIf.0">
+      <details key="start" value="1956"/>
+      <details key="end" value="2030"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.103" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@elseIf.0/@body.0">
+      <details key="start" value="2002"/>
+      <details key="end" value="2011"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.104" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@elseIf.0/@body.1">
+      <details key="start" value="2012"/>
+      <details key="end" value="2028"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.105" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@elseIf.0/@body.1/@source">
+      <details key="start" value="2012"/>
+      <details key="end" value="2018"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.106" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@elseIf.0/@body.1/@source/p">
+      <details key="start" value="2012"/>
+      <details key="end" value="2013"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.107" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@elseIf.0/@ifExpr">
+      <details key="start" value="1964"/>
+      <details key="end" value="2001"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.108" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@elseIf.0/@ifExpr/@source">
+      <details key="start" value="1965"/>
+      <details key="end" value="1976"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.109" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@elseIf.0/@ifExpr/@source/@source">
+      <details key="start" value="1965"/>
+      <details key="end" value="1971"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.110" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@elseIf.0/@ifExpr/@source/@source/p">
+      <details key="start" value="1965"/>
+      <details key="end" value="1966"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.111" references="/0/createEntityJPA/@body.1/@body.17/@body.0/@elseIf.0/@ifExpr/@argument.0">
+      <details key="start" value="1994"/>
+      <details key="end" value="1999"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.112" references="/0/createEntityJPA/@body.1/@body.17/p">
+      <details key="start" value="1834"/>
+      <details key="end" value="1846"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.113" references="/0/createEntityJPA/@body.1/@body.17/@iterSet">
+      <details key="start" value="1849"/>
+      <details key="end" value="1865"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.114" references="/0/createEntityJPA/@body.1/@body.17/@iterSet/aClass">
+      <details key="start" value="1849"/>
+      <details key="end" value="1855"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.115" references="/0/createEntityJPA/@body.1/@body.17/@each">
+      <details key="start" value="1878"/>
+      <details key="end" value="1881"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.116" references="/0/createEntityJPA/@body.1/@body.18">
+      <details key="start" value="2041"/>
+      <details key="end" value="2059"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.117" references="/0/createEntityJPA/@body.1/@body.19">
+      <details key="start" value="2061"/>
+      <details key="end" value="2167"/>
+      <details key="line" value="58"/>
+    </eAnnotations>
+    <eAnnotations source="positions.118" references="/0/createEntityJPA/@body.1/@body.19/@body.0">
+      <details key="start" value="2118"/>
+      <details key="end" value="2126"/>
+      <details key="line" value="59"/>
+    </eAnnotations>
+    <eAnnotations source="positions.119" references="/0/createEntityJPA/@body.1/@body.19/@body.1">
+      <details key="start" value="2127"/>
+      <details key="end" value="2133"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.120" references="/0/createEntityJPA/@body.1/@body.19/@body.1/p">
+      <details key="start" value="2127"/>
+      <details key="end" value="2128"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.121" references="/0/createEntityJPA/@body.1/@body.19/@body.2">
+      <details key="start" value="2135"/>
+      <details key="end" value="2138"/>
+      <details key="line" value="59"/>
+    </eAnnotations>
+    <eAnnotations source="positions.122" references="/0/createEntityJPA/@body.1/@body.19/@body.3">
+      <details key="start" value="2139"/>
+      <details key="end" value="2155"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.123" references="/0/createEntityJPA/@body.1/@body.19/@body.3/@source">
+      <details key="start" value="2139"/>
+      <details key="end" value="2145"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.124" references="/0/createEntityJPA/@body.1/@body.19/@body.3/@source/p">
+      <details key="start" value="2139"/>
+      <details key="end" value="2140"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.125" references="/0/createEntityJPA/@body.1/@body.19/@body.4">
+      <details key="start" value="2157"/>
+      <details key="end" value="2159"/>
+      <details key="line" value="59"/>
+    </eAnnotations>
+    <eAnnotations source="positions.126" references="/0/createEntityJPA/@body.1/@body.19/p">
+      <details key="start" value="2067"/>
+      <details key="end" value="2079"/>
+      <details key="line" value="58"/>
+    </eAnnotations>
+    <eAnnotations source="positions.127" references="/0/createEntityJPA/@body.1/@body.19/@iterSet">
+      <details key="start" value="2082"/>
+      <details key="end" value="2098"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.128" references="/0/createEntityJPA/@body.1/@body.19/@iterSet/aClass">
+      <details key="start" value="2082"/>
+      <details key="end" value="2088"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.129" references="/0/createEntityJPA/@body.1/@body.19/@each">
+      <details key="start" value="2111"/>
+      <details key="end" value="2115"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.130" references="/0/createEntityJPA/@body.1/@body.20">
+      <details key="start" value="2168"/>
+      <details key="end" value="2177"/>
+      <details key="line" value="61"/>
+    </eAnnotations>
+    <eAnnotations source="positions.131" references="/0/createEntityJPA/@body.1/@body.21">
+      <details key="start" value="2178"/>
+      <details key="end" value="2510"/>
+      <details key="line" value="64"/>
+    </eAnnotations>
+    <eAnnotations source="positions.132" references="/0/createEntityJPA/@body.1/@body.21/@body.0">
+      <details key="start" value="2235"/>
+      <details key="end" value="2271"/>
+      <details key="line" value="65"/>
+    </eAnnotations>
+    <eAnnotations source="positions.133" references="/0/createEntityJPA/@body.1/@body.21/@body.1">
+      <details key="start" value="2272"/>
+      <details key="end" value="2278"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.134" references="/0/createEntityJPA/@body.1/@body.21/@body.1/p">
+      <details key="start" value="2272"/>
+      <details key="end" value="2273"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.135" references="/0/createEntityJPA/@body.1/@body.21/@body.2">
+      <details key="start" value="2280"/>
+      <details key="end" value="2297"/>
+      <details key="line" value="67"/>
+    </eAnnotations>
+    <eAnnotations source="positions.136" references="/0/createEntityJPA/@body.1/@body.21/@body.3">
+      <details key="start" value="2297"/>
+      <details key="end" value="2470"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.137" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@body.0">
+      <details key="start" value="2343"/>
+      <details key="end" value="2354"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.138" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@body.1">
+      <details key="start" value="2355"/>
+      <details key="end" value="2376"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.139" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@body.1/@source">
+      <details key="start" value="2355"/>
+      <details key="end" value="2361"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.140" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@body.1/@source/p">
+      <details key="start" value="2355"/>
+      <details key="end" value="2356"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.141" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@body.2">
+      <details key="start" value="2378"/>
+      <details key="end" value="2380"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.142" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@ifExpr">
+      <details key="start" value="2301"/>
+      <details key="end" value="2342"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.143" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@ifExpr/@source">
+      <details key="start" value="2302"/>
+      <details key="end" value="2313"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.144" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@ifExpr/@source/@source">
+      <details key="start" value="2302"/>
+      <details key="end" value="2308"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.145" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@ifExpr/@source/@source/p">
+      <details key="start" value="2302"/>
+      <details key="end" value="2303"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.146" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@ifExpr/@argument.0">
+      <details key="start" value="2331"/>
+      <details key="end" value="2340"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.147" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@elseIf.0">
+      <details key="start" value="2380"/>
+      <details key="end" value="2465"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.148" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@elseIf.0/@body.0">
+      <details key="start" value="2426"/>
+      <details key="end" value="2438"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.149" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@elseIf.0/@body.1">
+      <details key="start" value="2439"/>
+      <details key="end" value="2460"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.150" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@elseIf.0/@body.1/@source">
+      <details key="start" value="2439"/>
+      <details key="end" value="2445"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.151" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@elseIf.0/@body.1/@source/p">
+      <details key="start" value="2439"/>
+      <details key="end" value="2440"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.152" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@elseIf.0/@body.2">
+      <details key="start" value="2462"/>
+      <details key="end" value="2465"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.153" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@elseIf.0/@ifExpr">
+      <details key="start" value="2388"/>
+      <details key="end" value="2425"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.154" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@elseIf.0/@ifExpr/@source">
+      <details key="start" value="2389"/>
+      <details key="end" value="2400"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.155" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@elseIf.0/@ifExpr/@source/@source">
+      <details key="start" value="2389"/>
+      <details key="end" value="2395"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.156" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@elseIf.0/@ifExpr/@source/@source/p">
+      <details key="start" value="2389"/>
+      <details key="end" value="2390"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.157" references="/0/createEntityJPA/@body.1/@body.21/@body.3/@elseIf.0/@ifExpr/@argument.0">
+      <details key="start" value="2418"/>
+      <details key="end" value="2423"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.158" references="/0/createEntityJPA/@body.1/@body.21/@body.4">
+      <details key="start" value="2470"/>
+      <details key="end" value="2488"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.159" references="/0/createEntityJPA/@body.1/@body.21/@body.5">
+      <details key="start" value="2489"/>
+      <details key="end" value="2495"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.160" references="/0/createEntityJPA/@body.1/@body.21/@body.5/p">
+      <details key="start" value="2489"/>
+      <details key="end" value="2490"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.161" references="/0/createEntityJPA/@body.1/@body.21/@body.6">
+      <details key="start" value="2497"/>
+      <details key="end" value="2503"/>
+      <details key="line" value="70"/>
+    </eAnnotations>
+    <eAnnotations source="positions.162" references="/0/createEntityJPA/@body.1/@body.21/p">
+      <details key="start" value="2184"/>
+      <details key="end" value="2196"/>
+      <details key="line" value="64"/>
+    </eAnnotations>
+    <eAnnotations source="positions.163" references="/0/createEntityJPA/@body.1/@body.21/@iterSet">
+      <details key="start" value="2199"/>
+      <details key="end" value="2215"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.164" references="/0/createEntityJPA/@body.1/@body.21/@iterSet/aClass">
+      <details key="start" value="2199"/>
+      <details key="end" value="2205"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.165" references="/0/createEntityJPA/@body.1/@body.21/@each">
+      <details key="start" value="2228"/>
+      <details key="end" value="2232"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.166" references="/0/createEntityJPA/@body.1/@body.22">
+      <details key="start" value="2511"/>
+      <details key="end" value="2514"/>
+      <details key="line" value="73"/>
+    </eAnnotations>
+    <eAnnotations source="positions.167" references="/0/createEntityJPA/@body.1/@body.23">
+      <details key="start" value="2515"/>
+      <details key="end" value="2841"/>
+      <details key="line" value="75"/>
+    </eAnnotations>
+    <eAnnotations source="positions.168" references="/0/createEntityJPA/@body.1/@body.23/@body.0">
+      <details key="start" value="2572"/>
+      <details key="end" value="2604"/>
+      <details key="line" value="76"/>
+    </eAnnotations>
+    <eAnnotations source="positions.169" references="/0/createEntityJPA/@body.1/@body.23/@body.1">
+      <details key="start" value="2605"/>
+      <details key="end" value="2611"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.170" references="/0/createEntityJPA/@body.1/@body.23/@body.1/p">
+      <details key="start" value="2605"/>
+      <details key="end" value="2606"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.171" references="/0/createEntityJPA/@body.1/@body.23/@body.2">
+      <details key="start" value="2613"/>
+      <details key="end" value="2637"/>
+      <details key="line" value="79"/>
+    </eAnnotations>
+    <eAnnotations source="positions.172" references="/0/createEntityJPA/@body.1/@body.23/@body.3">
+      <details key="start" value="2638"/>
+      <details key="end" value="2659"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.173" references="/0/createEntityJPA/@body.1/@body.23/@body.3/@source">
+      <details key="start" value="2638"/>
+      <details key="end" value="2644"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.174" references="/0/createEntityJPA/@body.1/@body.23/@body.3/@source/p">
+      <details key="start" value="2638"/>
+      <details key="end" value="2639"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.175" references="/0/createEntityJPA/@body.1/@body.23/@body.4">
+      <details key="start" value="2661"/>
+      <details key="end" value="2662"/>
+      <details key="line" value="80"/>
+    </eAnnotations>
+    <eAnnotations source="positions.176" references="/0/createEntityJPA/@body.1/@body.23/@body.5">
+      <details key="start" value="2662"/>
+      <details key="end" value="2795"/>
+      <details key="line" value="80"/>
+    </eAnnotations>
+    <eAnnotations source="positions.177" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@body.0">
+      <details key="start" value="2708"/>
+      <details key="end" value="2716"/>
+      <details key="line" value="80"/>
+    </eAnnotations>
+    <eAnnotations source="positions.178" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@body.1">
+      <details key="start" value="2717"/>
+      <details key="end" value="2723"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.179" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@body.1/p">
+      <details key="start" value="2717"/>
+      <details key="end" value="2718"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.180" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@ifExpr">
+      <details key="start" value="2666"/>
+      <details key="end" value="2707"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.181" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@ifExpr/@source">
+      <details key="start" value="2667"/>
+      <details key="end" value="2678"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.182" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@ifExpr/@source/@source">
+      <details key="start" value="2667"/>
+      <details key="end" value="2673"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.183" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@ifExpr/@source/@source/p">
+      <details key="start" value="2667"/>
+      <details key="end" value="2668"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.184" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@ifExpr/@argument.0">
+      <details key="start" value="2696"/>
+      <details key="end" value="2705"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.185" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@elseIf.0">
+      <details key="start" value="2725"/>
+      <details key="end" value="2790"/>
+      <details key="line" value="80"/>
+    </eAnnotations>
+    <eAnnotations source="positions.186" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@elseIf.0/@body.0">
+      <details key="start" value="2771"/>
+      <details key="end" value="2780"/>
+      <details key="line" value="80"/>
+    </eAnnotations>
+    <eAnnotations source="positions.187" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@elseIf.0/@body.1">
+      <details key="start" value="2781"/>
+      <details key="end" value="2787"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.188" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@elseIf.0/@body.1/p">
+      <details key="start" value="2781"/>
+      <details key="end" value="2782"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.189" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@elseIf.0/@body.2">
+      <details key="start" value="2789"/>
+      <details key="end" value="2790"/>
+      <details key="line" value="80"/>
+    </eAnnotations>
+    <eAnnotations source="positions.190" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@elseIf.0/@ifExpr">
+      <details key="start" value="2733"/>
+      <details key="end" value="2770"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.191" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@elseIf.0/@ifExpr/@source">
+      <details key="start" value="2734"/>
+      <details key="end" value="2745"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.192" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@elseIf.0/@ifExpr/@source/@source">
+      <details key="start" value="2734"/>
+      <details key="end" value="2740"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.193" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@elseIf.0/@ifExpr/@source/@source/p">
+      <details key="start" value="2734"/>
+      <details key="end" value="2735"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.194" references="/0/createEntityJPA/@body.1/@body.23/@body.5/@elseIf.0/@ifExpr/@argument.0">
+      <details key="start" value="2763"/>
+      <details key="end" value="2768"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.195" references="/0/createEntityJPA/@body.1/@body.23/@body.6">
+      <details key="start" value="2795"/>
+      <details key="end" value="2807"/>
+      <details key="line" value="80"/>
+    </eAnnotations>
+    <eAnnotations source="positions.196" references="/0/createEntityJPA/@body.1/@body.23/@body.7">
+      <details key="start" value="2808"/>
+      <details key="end" value="2814"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.197" references="/0/createEntityJPA/@body.1/@body.23/@body.7/p">
+      <details key="start" value="2808"/>
+      <details key="end" value="2809"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.198" references="/0/createEntityJPA/@body.1/@body.23/@body.8">
+      <details key="start" value="2816"/>
+      <details key="end" value="2819"/>
+      <details key="line" value="81"/>
+    </eAnnotations>
+    <eAnnotations source="positions.199" references="/0/createEntityJPA/@body.1/@body.23/@body.9">
+      <details key="start" value="2820"/>
+      <details key="end" value="2826"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.200" references="/0/createEntityJPA/@body.1/@body.23/@body.9/p">
+      <details key="start" value="2820"/>
+      <details key="end" value="2821"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.201" references="/0/createEntityJPA/@body.1/@body.23/@body.10">
+      <details key="start" value="2828"/>
+      <details key="end" value="2834"/>
+      <details key="line" value="81"/>
+    </eAnnotations>
+    <eAnnotations source="positions.202" references="/0/createEntityJPA/@body.1/@body.23/p">
+      <details key="start" value="2521"/>
+      <details key="end" value="2533"/>
+      <details key="line" value="75"/>
+    </eAnnotations>
+    <eAnnotations source="positions.203" references="/0/createEntityJPA/@body.1/@body.23/@iterSet">
+      <details key="start" value="2536"/>
+      <details key="end" value="2552"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.204" references="/0/createEntityJPA/@body.1/@body.23/@iterSet/aClass">
+      <details key="start" value="2536"/>
+      <details key="end" value="2542"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.205" references="/0/createEntityJPA/@body.1/@body.23/@each">
+      <details key="start" value="2565"/>
+      <details key="end" value="2569"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.206" references="/0/createEntityJPA/@body.1/@body.24">
+      <details key="start" value="2842"/>
+      <details key="end" value="2908"/>
+      <details key="line" value="84"/>
+    </eAnnotations>
+    <eAnnotations source="positions.207" references="/0/createEntityJPA/@body.1/@body.25">
+      <details key="start" value="2908"/>
+      <details key="end" value="3328"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.208" references="/0/createEntityJPA/@body.1/@body.25/@body.0">
+      <details key="start" value="2971"/>
+      <details key="end" value="3322"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.209" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@body.0">
+      <details key="start" value="3017"/>
+      <details key="end" value="3027"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.210" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@body.1">
+      <details key="start" value="3028"/>
+      <details key="end" value="3049"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.211" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@body.1/@source">
+      <details key="start" value="3028"/>
+      <details key="end" value="3034"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.212" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@body.1/@source/p">
+      <details key="start" value="3028"/>
+      <details key="end" value="3029"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.213" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@body.2">
+      <details key="start" value="3051"/>
+      <details key="end" value="3063"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.214" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@body.3">
+      <details key="start" value="3064"/>
+      <details key="end" value="3100"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.215" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@body.3/@source">
+      <details key="start" value="3064"/>
+      <details key="end" value="3085"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.216" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@body.3/@source/@source">
+      <details key="start" value="3064"/>
+      <details key="end" value="3075"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.217" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@body.3/@source/@source/aClass">
+      <details key="start" value="3064"/>
+      <details key="end" value="3070"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.218" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@body.4">
+      <details key="start" value="3102"/>
+      <details key="end" value="3109"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.219" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@body.5">
+      <details key="start" value="3110"/>
+      <details key="end" value="3131"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.220" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@body.5/@source">
+      <details key="start" value="3110"/>
+      <details key="end" value="3116"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.221" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@body.5/@source/p">
+      <details key="start" value="3110"/>
+      <details key="end" value="3111"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.222" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@body.6">
+      <details key="start" value="3133"/>
+      <details key="end" value="3146"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.223" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@ifExpr">
+      <details key="start" value="2975"/>
+      <details key="end" value="3016"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.224" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@ifExpr/@source">
+      <details key="start" value="2976"/>
+      <details key="end" value="2987"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.225" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@ifExpr/@source/@source">
+      <details key="start" value="2976"/>
+      <details key="end" value="2982"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.226" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@ifExpr/@source/@source/p">
+      <details key="start" value="2976"/>
+      <details key="end" value="2977"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.227" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@ifExpr/@argument.0">
+      <details key="start" value="3005"/>
+      <details key="end" value="3014"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.228" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0">
+      <details key="start" value="3146"/>
+      <details key="end" value="3317"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.229" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@body.0">
+      <details key="start" value="3192"/>
+      <details key="end" value="3203"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.230" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@body.1">
+      <details key="start" value="3204"/>
+      <details key="end" value="3225"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.231" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@body.1/@source">
+      <details key="start" value="3204"/>
+      <details key="end" value="3210"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.232" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@body.1/@source/p">
+      <details key="start" value="3204"/>
+      <details key="end" value="3205"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.233" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@body.2">
+      <details key="start" value="3227"/>
+      <details key="end" value="3235"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.234" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@body.3">
+      <details key="start" value="3236"/>
+      <details key="end" value="3272"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.235" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@body.3/@source">
+      <details key="start" value="3236"/>
+      <details key="end" value="3257"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.236" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@body.3/@source/@source">
+      <details key="start" value="3236"/>
+      <details key="end" value="3247"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.237" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@body.3/@source/@source/aClass">
+      <details key="start" value="3236"/>
+      <details key="end" value="3242"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.238" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@body.4">
+      <details key="start" value="3274"/>
+      <details key="end" value="3281"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.239" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@body.5">
+      <details key="start" value="3282"/>
+      <details key="end" value="3303"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.240" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@body.5/@source">
+      <details key="start" value="3282"/>
+      <details key="end" value="3288"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.241" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@body.5/@source/p">
+      <details key="start" value="3282"/>
+      <details key="end" value="3283"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.242" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@body.6">
+      <details key="start" value="3305"/>
+      <details key="end" value="3317"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.243" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@ifExpr">
+      <details key="start" value="3154"/>
+      <details key="end" value="3191"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.244" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@ifExpr/@source">
+      <details key="start" value="3155"/>
+      <details key="end" value="3166"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.245" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@ifExpr/@source/@source">
+      <details key="start" value="3155"/>
+      <details key="end" value="3161"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.246" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@ifExpr/@source/@source/p">
+      <details key="start" value="3155"/>
+      <details key="end" value="3156"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.247" references="/0/createEntityJPA/@body.1/@body.25/@body.0/@elseIf.0/@ifExpr/@argument.0">
+      <details key="start" value="3184"/>
+      <details key="end" value="3189"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.248" references="/0/createEntityJPA/@body.1/@body.25/p">
+      <details key="start" value="2913"/>
+      <details key="end" value="2925"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.249" references="/0/createEntityJPA/@body.1/@body.25/@iterSet">
+      <details key="start" value="2928"/>
+      <details key="end" value="2944"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.250" references="/0/createEntityJPA/@body.1/@body.25/@iterSet/aClass">
+      <details key="start" value="2928"/>
+      <details key="end" value="2934"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.251" references="/0/createEntityJPA/@body.1/@body.25/@each">
+      <details key="start" value="2957"/>
+      <details key="end" value="2969"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.252" references="/0/createEntityJPA/@body.1/@body.26">
+      <details key="start" value="3328"/>
+      <details key="end" value="3421"/>
+      <details key="line" value="89"/>
+    </eAnnotations>
+    <eAnnotations source="positions.253" references="/0/createEntityJPA/@body.1/@fileUrl">
+      <details key="start" value="155"/>
+      <details key="end" value="253"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.254" references="/0/createEntityJPA/@body.1/@fileUrl/@source">
+      <details key="start" value="155"/>
+      <details key="end" value="198"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.255" references="/0/createEntityJPA/@body.1/@fileUrl/@argument.0">
+      <details key="start" value="201"/>
+      <details key="end" value="253"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.256" references="/0/createEntityJPA/@body.1/@fileUrl/@argument.0/@source">
+      <details key="start" value="201"/>
+      <details key="end" value="237"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.257" references="/0/createEntityJPA/@body.1/@fileUrl/@argument.0/@source/@source">
+      <details key="start" value="201"/>
+      <details key="end" value="222"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.258" references="/0/createEntityJPA/@body.1/@fileUrl/@argument.0/@source/@source/@source">
+      <details key="start" value="201"/>
+      <details key="end" value="212"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.259" references="/0/createEntityJPA/@body.1/@fileUrl/@argument.0/@source/@source/@source/aClass">
+      <details key="start" value="201"/>
+      <details key="end" value="207"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.260" references="/0/createEntityJPA/@body.1/@fileUrl/@argument.0/@argument.0">
+      <details key="start" value="245"/>
+      <details key="end" value="252"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.261" references="/0/createEntityJPA/@body.1/@charset">
+      <details key="start" value="262"/>
+      <details key="end" value="269"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.262" references="/0/createEntityJPA/aClass">
+      <details key="start" value="130"/>
+      <details key="end" value="144"/>
+      <details key="line" value="5"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>

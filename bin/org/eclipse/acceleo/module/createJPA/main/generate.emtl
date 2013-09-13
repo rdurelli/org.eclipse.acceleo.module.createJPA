@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="generate" nsURI="org::eclipse::acceleo::module::createJPA::main::generate" startHeaderPosition="29" endHeaderPosition="161">
+    <input>
+      <takesTypesFrom href="http://www.eclipse.org/uml2/3.0.0/UML#/"/>
+    </input>
+    <imports href="createEntityJPA.emtl#/0"/>
+    <imports href="generatePersistenceUNIT.emtl#/0"/>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateElement" visibility="Public" main="true">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="mtl:TemplateInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="createEntityJPA.emtl#/0/createEntityJPA"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/6">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="mtl:TemplateInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="generatePersistenceUNIT.emtl#/0/generatePersistenceUNIT"/>
+        <argument xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aClass" referredVariable="/0/generateElement/aClass">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//Type/package"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <parameter name="aClass">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="generateElement">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateElement"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aClass">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="createEntityJPA">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="createEntityJPA.emtl#/0/createEntityJPA"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aClass">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generatePersistenceUNIT">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="generatePersistenceUNIT.emtl#/0/generatePersistenceUNIT"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aPackage">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Class_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Package_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Class"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/generateElement">
+      <details key="start" value="248"/>
+      <details key="end" value="393"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/generateElement/@body.0">
+      <details key="start" value="315"/>
+      <details key="end" value="316"/>
+      <details key="line" value="9"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/generateElement/@body.1">
+      <details key="start" value="317"/>
+      <details key="end" value="334"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/generateElement/@body.1/self">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/generateElement/@body.2">
+      <details key="start" value="336"/>
+      <details key="end" value="337"/>
+      <details key="line" value="11"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/generateElement/@body.3">
+      <details key="start" value="338"/>
+      <details key="end" value="378"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/generateElement/@body.3/@argument.0">
+      <details key="start" value="362"/>
+      <details key="end" value="377"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/generateElement/@body.3/@argument.0/aClass">
+      <details key="start" value="362"/>
+      <details key="end" value="368"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/generateElement/@body.4">
+      <details key="start" value="380"/>
+      <details key="end" value="381"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/generateElement/aClass">
+      <details key="start" value="281"/>
+      <details key="end" value="295"/>
+      <details key="line" value="7"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>

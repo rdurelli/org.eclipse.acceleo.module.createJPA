@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="generatePersistenceUNIT" nsURI="org::eclipse::acceleo::module::createJPA::main::generatePersistenceUNIT" startHeaderPosition="98" endHeaderPosition="259">
+    <documentation xsi:type="mtl:ModuleDocumentation">
+      <body startPosition="32" endPosition="95" value="&#xA;The documentation of the module generatePersistenceUNIT.&#xA;&#xA;"/>
+    </documentation>
+    <input>
+      <takesTypesFrom href="http://www.eclipse.org/uml2/3.0.0/UML#/"/>
+    </input>
+    <ownedModuleElement xsi:type="mtl:Template" name="generatePersistenceUNIT" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;persistence version=&quot;2.0&quot; xmlns=&quot;http://java.sun.com/xml/ns/persistence&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd&quot;>&#xA;  &lt;persistence-unit name=&quot;nameUNIT&quot; transaction-type=&quot;RESOURCE_LOCAL&quot;>&#xA;    &lt;provider>org.eclipse.persistence.jpa.PersistenceProvider&lt;/provider>&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="    &#x9;&lt;class>br.com.uspicmc.modernization.JPA.entity."/>
+          <body xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/toUpperFirst">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="class" referredVariable="/0/generatePersistenceUNIT/@body.1/@body.1/class">
+                  <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//PackageableElement"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/3.0.0/UML#//NamedElement/name"/>
+              </source>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/toLower"/>
+            </source>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/class>&#xA;"/>
+          <loopVariable name="class">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//PackageableElement"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/8/Set(PackageableElement)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aPackage" referredVariable="/0/generatePersistenceUNIT/aPackage">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/uml2/3.0.0/UML#//Package/packagedElement"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="    &lt;properties>&#xA;      &lt;property name=&quot;javax.persistence.jdbc.url&quot; value=&quot;jdbc:mysql://localhost:3306/project?zeroDateTimeBehavior=convertToNull&quot;/>&#xA;      &lt;property name=&quot;javax.persistence.jdbc.password&quot; value=&quot;root&quot;/>&#xA;      &lt;property name=&quot;javax.persistence.jdbc.driver&quot; value=&quot;com.mysql.jdbc.Driver&quot;/>&#xA;      &lt;property name=&quot;javax.persistence.jdbc.user&quot; value=&quot;root&quot;/>&#xA;    &lt;/properties>&#xA;  &lt;/persistence-unit>&#xA;&lt;/persistence>&#xA;&#xA;&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/+">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/META-INF/">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="persistence.xml">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="177" endPosition="259" value="&#xA;The documentation of the template generatePersistenceUNIT.&#xA;@param aClass&#xA;&#xA;"/>
+        <parametersDocumentation name="aClass">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aPackage">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+      <eOperations name="toUpperFirst">
+        <eAnnotations source="MTL"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eOperations>
+      <eOperations name="+">
+        <eAnnotations source="MTL non-standard"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="other">
+          <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="generatePersistenceUNIT">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generatePersistenceUNIT"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aPackage">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Package_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="collections">
+    <eClassifiers xsi:type="ocl.ecore:SetType" name="Set(PackageableElement)" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//PackageableElement"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//PackageableElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//PackageableElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Package"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/@documentation">
+      <details key="start" value="29"/>
+      <details key="end" value="97"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/generatePersistenceUNIT">
+      <details key="start" value="262"/>
+      <details key="end" value="1436"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/generatePersistenceUNIT/@body.0">
+      <details key="start" value="324"/>
+      <details key="end" value="325"/>
+      <details key="line" value="13"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/generatePersistenceUNIT/@body.1">
+      <details key="start" value="325"/>
+      <details key="end" value="1424"/>
+      <details key="line" value="14"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/generatePersistenceUNIT/@body.1/@body.0">
+      <details key="start" value="383"/>
+      <details key="end" value="815"/>
+      <details key="line" value="15"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/generatePersistenceUNIT/@body.1/@body.1">
+      <details key="start" value="819"/>
+      <details key="end" value="990"/>
+      <details key="line" value="20"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/generatePersistenceUNIT/@body.1/@body.1/@body.0">
+      <details key="start" value="881"/>
+      <details key="end" value="933"/>
+      <details key="line" value="21"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/generatePersistenceUNIT/@body.1/@body.1/@body.1">
+      <details key="start" value="934"/>
+      <details key="end" value="969"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/generatePersistenceUNIT/@body.1/@body.1/@body.1/@source">
+      <details key="start" value="934"/>
+      <details key="end" value="954"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/generatePersistenceUNIT/@body.1/@body.1/@body.1/@source/@source">
+      <details key="start" value="934"/>
+      <details key="end" value="944"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/generatePersistenceUNIT/@body.1/@body.1/@body.1/@source/@source/class">
+      <details key="start" value="934"/>
+      <details key="end" value="939"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/generatePersistenceUNIT/@body.1/@body.1/@body.2">
+      <details key="start" value="971"/>
+      <details key="end" value="980"/>
+      <details key="line" value="21"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/generatePersistenceUNIT/@body.1/@body.1/class">
+      <details key="start" value="825"/>
+      <details key="end" value="851"/>
+      <details key="line" value="20"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/generatePersistenceUNIT/@body.1/@body.1/@iterSet">
+      <details key="start" value="854"/>
+      <details key="end" value="878"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/generatePersistenceUNIT/@body.1/@body.1/@iterSet/aPackage">
+      <details key="start" value="854"/>
+      <details key="end" value="862"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/generatePersistenceUNIT/@body.1/@body.2">
+      <details key="start" value="991"/>
+      <details key="end" value="1417"/>
+      <details key="line" value="23"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/generatePersistenceUNIT/@body.1/@fileUrl">
+      <details key="start" value="332"/>
+      <details key="end" value="364"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/generatePersistenceUNIT/@body.1/@fileUrl/@source">
+      <details key="start" value="332"/>
+      <details key="end" value="344"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generatePersistenceUNIT/@body.1/@fileUrl/@argument.0">
+      <details key="start" value="347"/>
+      <details key="end" value="364"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generatePersistenceUNIT/@body.1/@charset">
+      <details key="start" value="373"/>
+      <details key="end" value="380"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generatePersistenceUNIT/@documentation">
+      <details key="start" value="174"/>
+      <details key="end" value="261"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/generatePersistenceUNIT/@documentation/aClass">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/generatePersistenceUNIT/aPackage">
+      <details key="start" value="303"/>
+      <details key="end" value="321"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>
